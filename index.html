@@ -1,37 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  </head>
-  <body>
-    <img src="logo.PNG" alt="">
-    <h2 class="text-center text-danger">Check your Results</h2>
-    <div>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-color: #10b9a8;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .info {
+      background-color: #0a2941;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cards-section {
+      background-color: #9ea6b2;
+      padding: 40px 20px;
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
 
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Enter Hall Ticket Number</label>
-                <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <button type="Get Results" class="btn btn-primary">Get Results</button>
-        </form>
-        
-        <table class="table">
-            <thead>
-                Result Details:
-            </thead>
-            <tbody  class="table-dark">
-                <tr>
-                    <td>Subject</td>
-                    <td>Marks</td>
-                    <td>Grade</td>
-                </tr>
-            </tbody>
-        </table>
+<!-- Task 3.1 Section -->
+<div class="hero">
+  <h2>Who Am I?</h2>
+  <img src="profile.jpg" alt="Profile" class="profile-img">
+  <h4>I'm Python Full Stack Developer</h4>
+</div>
+
+<div class="info">
+  <h3>What Am I?</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ab! Voluptate repellat enim cum tempora delectus voluptatem eaque laudantium, quidem, maxime eum incidunt ad beatae cumque nemo? Quidem, quas ducimus!
+  </p>
+  <a href="#" class="btn btn-danger">Read More..</a>
+</div>
+
+<!-- Task 3.2 Section -->
+<div class="cards-section text-center">
+  <h2>Where to Find Me?</h2>
+  <div class="container mt-4">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="dance.jpg" class="card-img-top" alt="Dancer">
+          <div class="card-body">
+            <p class="card-text">Dancer ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="guitar.jpg" class="card-img-top" alt="Guitarist">
+          <div class="card-body">
+            <p class="card-text">Guitar Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="chess.jpg" class="card-img-top" alt="Chess Player">
+          <div class="card-body">
+            <p class="card-text">Chess gamer Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  </body>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>This Website is Developed By @ <a href="#" class="text-info">taneeshayadavchamudala</a></p>
+</div>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
